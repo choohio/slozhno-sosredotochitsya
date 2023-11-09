@@ -1,5 +1,144 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-width: 1024px;
+  margin: 0 auto;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  height: 100vh;
+  min-height: 640px;
+  padding: 20px;
+}
+
+.decorated-zone:before {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--nav-color);
+  left: 50px;
+}
+
+.decorated-zone:after {
+
+}
+
+.header__theme-menu {
+  margin: 0 auto;
+}
+
+.header__theme-menu-button {
+  color: var(--nav-color);
+  padding: 0 13px;
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  text-transform: lowercase;
+  appearance: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.header__rec {
+  justify-self: end;
+  color: var(--nav-color);
+  text-transform: uppercase;
+}
+
+.header__title {
+  right: 20px;
+  font-size: 157px;
+  color: var(--header-logo-color);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  text-transform: lowercase;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.header__text {
+  display: flex;
+  justify-content: flex-end;
+  width: 491px;
+  background-color: var(--section-heading-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.title-decor {
+  color: var(--title-decor-color);
+  background-color: var(--section-heading-color);
+}
+
+.text-decor {
+  color: var(--main-text-color);
+}
+
+/* Cекция с картинками */
+
+.section__images {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr min-content;
+  align-items: center;
+}
+
+.sunset {
+  width: 649px;
+  height: 260px;
+  object-fit: cover;
+  grid-column: 1 / span 2;
+}
+
+.ice-cream {
+  width: 315px;
+  height: 595px;
+  object-fit: cover;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.tape {
+  width: 315px;
+  height: 768px;
+  object-fit: cover;
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.books {
+  width: 315px;
+  height: 315px;
+  object-fit: cover;
+  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.street {
+  width: 649px;
+  height: 428px;
+  object-fit: cover;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 3;
 }
