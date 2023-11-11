@@ -41,7 +41,7 @@
   --nav-hover-color: rgb(225 0 112 / 0.4);
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   :root {
     --main-gap: 20px;
   }
