@@ -284,15 +284,42 @@
     max-width: 768px;
   }
 
+  .section-what__list {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0;
+  }
 
-  .section-what {
+  .section-images__gallery {
+    gap: auto;
+  }
+
+  .section-images__item:first-of-type {
+    width: 479px;
+    height: 192px;
+  }
+
+  .section-images__item:last-of-type {
+    width: 479px;
+    height: 318px;
+  }
+
+  .section-images__item:nth-of-type(2) {
+    width: 229px;
+    height: 441px;
+  }
+
+  .section-images__item:nth-of-type(3) {
+    width: 229px;
+    height: 568px;
     
   }
 
-  .section-what__list {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+  .section-images__item:nth-of-type(4) {
+    width: 230px;
+    height: 230px;
   }
+
+
 
 }
