@@ -6,6 +6,7 @@
 
 .page.theme_light {
   --main-font-family: 'IBM Plex mono', monospace;
+  --button-hover-border-color: rgba(50, 49, 45, 0.40);
   --accent-color: #ff0070;
   --main-bg-color: #00183f;
   --title-bg-color: #FF8DCB;
@@ -16,6 +17,9 @@
   --section-heading-color: #FF8DCB;
   --header-logo-color: #FFC2E6;
   --footer-logo-color: #FFC2E6;
+
+
+  --visibility: hidden;
   --background-image: url('../images/cover-image-light.png');
 }
 

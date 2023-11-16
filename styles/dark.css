@@ -6,6 +6,7 @@
 
 .page.theme_dark {
   --accent-color: #ff0070;
+  --button-hover-border-color: rgba(255, 0, 112, 0.40);
   --main-bg-color: #00183f;
   --main-text-color: #f1b2ce;
   --nav-color: #ff0070;
@@ -20,6 +21,8 @@
   --main-gap: 10px;
   --main-text-size: 18px;
   --main-line-height: 1.3;
+
+  --visibility: visible;
 
   --background-image: url('../images/cover-image-dark.png');
 }
