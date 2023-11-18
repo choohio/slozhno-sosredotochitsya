@@ -5,9 +5,10 @@
 */
 
 .page.theme_light {
+  --accent-color: #353430;
   --main-font-family: 'IBM Plex mono', monospace;
   --button-hover-border-color: rgba(50, 49, 45, 0.40);
-  --accent-color: #ff0070;
+  --accent-color: #FF8DCB;
   --main-bg-color: #00183f;
   --title-bg-color: #FF8DCB;
   --title-decor-color: #353430;
@@ -38,6 +39,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --accent-color: #353430;
     --main-font-family: 'IBM Plex mono', monospace;
     --accent-color: #ff0070;
     --main-bg-color: #00183f;
