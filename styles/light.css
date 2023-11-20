@@ -6,9 +6,10 @@
 
 .page.theme_light {
   --accent-color: #353430;
+  --shadow-color: #ff0070;
+  --shadow-color-low-resolution: #FF8DCB;
   --main-font-family: 'IBM Plex mono', monospace;
   --button-hover-border-color: rgba(50, 49, 45, 0.40);
-  --accent-color: #FF8DCB;
   --main-bg-color: #00183f;
   --title-bg-color: #FF8DCB;
   --title-decor-color: #353430;
@@ -18,8 +19,6 @@
   --section-heading-color: #FF8DCB;
   --header-logo-color: #FFC2E6;
   --footer-logo-color: #FFC2E6;
-
-
   --visibility: hidden;
   --background-image: url('../images/cover-image-light.png');
 }
@@ -40,14 +39,20 @@
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #353430;
+    --shadow-color: #ff0070;
+    --shadow-color-low-resolution: #FF8DCB;
     --main-font-family: 'IBM Plex mono', monospace;
+    --button-hover-border-color: rgba(50, 49, 45, 0.40);
     --main-bg-color: #00183f;
-    --main-text-color: #f1b2ce;
-    --nav-color: #ff0070;
+    --title-bg-color: #FF8DCB;
+    --title-decor-color: #353430;
+    --main-text-color: #353430;
+    --nav-color: #353430;
     --main-heading-color: #00183f;
-    --section-heading-color: #ff0070;
+    --section-heading-color: #FF8DCB;
     --header-logo-color: #FFC2E6;
     --footer-logo-color: #FFC2E6;
+    --visibility: hidden;
     --background-image: url('../images/cover-image-light.png');
   }
 
