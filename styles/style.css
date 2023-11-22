@@ -56,7 +56,7 @@
   left: 20px;
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .decorated-zone::after {
     bottom: 10px;
     left: 10px;
@@ -123,7 +123,7 @@
   margin-left: 10px;
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .header__rec {
     top: 10px;
     right: 20px;
@@ -141,7 +141,7 @@
   line-height: 82.5%;
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .header__logo {
     right: 0px;
   }
@@ -171,7 +171,7 @@
   line-height: 23.4px;
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .header__text {
     width: 100%;
   }
@@ -216,7 +216,7 @@
   }
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .header {
     padding: 10px;
   }
@@ -261,7 +261,7 @@
   gap: 10px;
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .section-why {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -311,7 +311,7 @@
   }
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .section-what {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(min-content, 3);
@@ -357,7 +357,7 @@
   font-weight: 400;
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .section-how {
     gap: 20px;
     grid-template-columns: 1fr;
@@ -394,7 +394,7 @@
   gap: 20px;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 576px) {
   .section-images__item:first-of-type {
     grid-area: first;
   }
@@ -413,7 +413,7 @@
 
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .section-images {
     margin-top: 50px;
     padding: 0 10px;
@@ -460,7 +460,7 @@
   }
 }
 
-@media (width < 376px) {
+@media (width < 576px) {
   .footer {
     display: flex;
     justify-content: center;
