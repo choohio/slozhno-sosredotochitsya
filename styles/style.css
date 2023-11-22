@@ -23,16 +23,11 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
-  min-height: 640px;
+  min-height: 668px;
+  padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.cover {
-  display: grid;
-  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  min-block-size: 100vh;
 }
 
 .decorated-zone {
@@ -106,8 +101,8 @@
 .header__rec {
   position: absolute;
   visibility: var(--visibility, visible);
-  top: 25px;
-  right: 35px;
+  top: 20px;
+  right: 30px;
 }
 
 .header__rec:before {
@@ -126,6 +121,13 @@
   width: 9px;
   height: 9px;
   margin-left: 10px;
+}
+
+@media (width < 376px) {
+  .header__rec {
+    top: 10px;
+    right: 20px;
+  }
 }
 
 .header__logo {
@@ -152,6 +154,7 @@
 }
 
 .header__text {
+  overflow: hidden;
   width: 50%;
   align-self: center;
   justify-self: end;
@@ -176,9 +179,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
+  overflow: hidden;
 }
 
 .text-decor {
+  overflow: hidden;
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -424,18 +429,17 @@
 /* FOOTER */
 
 .footer {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  min-height: 640px;
+  min-height: 668px;
   padding: 20px;
   margin-top: 60px;
 }
 
 .footer__logo {
   position: relative;
-  right: 20px;
   color: var(--footer-logo-color);
   text-shadow: 2px 2px 0 var(--shadow-color);
   font-size: 157px;
@@ -451,8 +455,10 @@
 }
 
 @media (width < 376px) {
-
   .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0 10px;
   }
 
