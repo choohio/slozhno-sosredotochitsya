@@ -241,6 +241,12 @@
   gap: 10px;
 }
 
+@media (width < 769px) {
+  .section-why {
+    gap: 20px;
+  }
+}
+
 .section-why__title {
   font-size: 18px;
   line-height: 23.4px;
@@ -280,6 +286,12 @@
   gap: 20px;
   padding: 0 20px;
   margin-top: 80px;
+}
+
+@media (width < 769) {
+  .section-what {
+    gap: 20px;
+  }
 }
 
 .section-what__title {
@@ -327,7 +339,7 @@
   grid-template-columns: 1fr 2fr;
   margin-top: 80px;
   padding: 0 20px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .section-how__title {
